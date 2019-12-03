@@ -36,7 +36,7 @@ mongoose.connect(config.url, {
 
 // default route
 app.get('/', (req, res) => {
-    res.json({"message": "Welcome to our first CRUD API"});
+    res.json({"message": "Welcome to our first CRUD API, use /products to see all products"});
 });
 
 // listen on port 5000 or process.env.PORT 
